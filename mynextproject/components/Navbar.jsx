@@ -4,7 +4,7 @@ import './Navbar.css'
  
 export default function Navbar(){
     return(
-         <nav className='navbar'>
+         <nav className='navbar py-10'>
           <Link href="/">
             <h1>Nextjs Curso</h1>
           </Link>
