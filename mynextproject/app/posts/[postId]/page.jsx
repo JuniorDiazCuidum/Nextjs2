@@ -1,3 +1,5 @@
+import PostPages from "../page"
+
 async function loadPost(id) {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
     const data = await res.json()
@@ -14,6 +16,13 @@ async function Page({ params }) {
         <div>
             <h1>{post.id} {post.title}</h1>
             <p>{post.body}</p>
+
+<hr />
+
+            <h3>Otras Publicaciones</h3>
+
+            <PostPages />
+
         </div>
     )
 }
