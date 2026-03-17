@@ -1,3 +1,12 @@
+import Users from "../components/Users"
+
+export const metadata = {
+    title: 'Mi pagina especial'
+}
+
 export default function HomePage () {
-    return <h1>Hola</h1>
+    return <section>
+        
+        <Users/>
+    </section>
 }
